@@ -43,4 +43,14 @@ public class Employee {
     public LocalDate getHireDay() {
         return hireDay;
     }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", hireDay=" + hireDay +
+                '}';
+    }
 }
